@@ -3,5 +3,5 @@ var http = require('http');
 http.createServer(function (req, res) {
     console.log('Got request for ' + req.url);
     res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('<h1>use the button dummy!  ' + process.env.IISNODE_VERSION + ', node version is ' + process.version + ']');
+    res.end('<h1>Hello Connect() demo! </h1>');
 }).listen(process.env.PORT);  
